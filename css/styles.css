@@ -9,18 +9,27 @@
 }
 a {
     text-decoration: none;
-
 }
-
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    border-width:  0;
+}
 ul {
     list-style-type: none;
 }
+
 body {
     color: var(--primary-color);
     background-color: var(--primary-background-color);
     font-family: Roboto, sans-serif;
     font-weight: 400;
     letter-spacing: 0.03em;
+
 }
 .site-nav,
 header .contacts {
@@ -52,35 +61,61 @@ footer,
     color: var(--primary-background-color);
     background-color: var(--logo-color);
 }
+.hero .container {
+    text-align: center;
+}
 .hero .title {
     color: var(--primary-background-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.hero-button {   
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    min-width: 216px;
+    padding: 10px 32px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    margin-bottom: 200px;
+}
+.container .section,
+.works {
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
+.section .container {
+    margin-bottom: 94px;
 }
 .section-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 .section .text {
     font-size: 14px;
     line-height: 1.71;
 }
-.hero button {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88; 
-    letter-spacing: 0.06em;
+.container .title {
+    margin-bottom: 50px;
 }
-
 .text,
 header .contacts {
     color: var(--secondary-color);
+}
+.team .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .section .title,
 .team .title {
@@ -94,6 +129,7 @@ header .contacts {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-bottom: 10px;
 }
 .team .text {
     font-weight: 400;
@@ -101,12 +137,17 @@ header .contacts {
     line-height: 1.19;
     text-align: center;
 }
-address .contacts{
-    color: var(--primary-background-color);
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
+.team-member {
+    margin-bottom: 30px;
 }
+
+/* .team li,
+.work li,
+.filters li {
+    display: inline-block;
+} */
+
+
 span,
 .current, 
 .site-nav:hover,
@@ -132,6 +173,12 @@ span,
 .team {
     background-color: var(--secondary-background-color);
 }
+.filters {
+    margin-bottom: 34px;
+}
+.work-exmpl {
+    margin: 20px 24px;
+}
 .filter {
     color: inherit;
     background-color: var(--secondary-background-color);
@@ -140,7 +187,7 @@ span,
     line-height: 1.62;
     letter-spacing: 0.03em
 }
-.work .title {
+.work .topic {
     color: var(--primary-color);
     font-weight: 700;
     font-size: 18px;
@@ -154,4 +201,21 @@ span,
 .hero-button,
 .filter {
     cursor: pointer;
+}
+footer .contacts {
+    color: var(--primary-background-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.container {
+    width: 1200px;
+    padding-left: 15;
+    padding-right: 15;
+    margin-left: auto;
+    margin-right: auto;
+    
+  
+    outline: 1px solid green;
+   
 }
