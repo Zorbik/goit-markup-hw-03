@@ -18,11 +18,18 @@ ul,
 li {
     margin: 0;
     border-width:  0;
+    padding: 0;
 }
 ul {
     list-style-type: none;
 }
-
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 body {
     color: var(--primary-color);
     background-color: var(--primary-background-color);
@@ -33,6 +40,10 @@ body {
 }
 .site-nav,
 header .contacts {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: inherit;
     font-weight: 500;
     font-size: 14px;
@@ -40,6 +51,8 @@ header .contacts {
     letter-spacing: 0.02em;
 }
 .logo {
+    margin-right: 93px;
+    
     color: var(--primary-background-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -50,7 +63,23 @@ header .contacts {
 header .logo{
     color: #000;
 }
+.box {
+    display: flex;
+}
+.box .item + .item,
+.contact-box .item + .item {
+    margin-left: 50px;
+}
+.contact-box {
+    display: flex;
+    margin-left: auto;
 
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
 footer,
 .hero {
     background-color: var(--footer-background-color);  
@@ -65,13 +94,14 @@ footer,
     text-align: center;
 }
 .hero .title {
+    margin-bottom: 30px;
+
     color: var(--primary-background-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin-bottom: 30px;
 }
 
 .hero-button {   
@@ -84,7 +114,6 @@ footer,
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    margin-bottom: 200px;
 }
 .container .section,
 .works {
@@ -96,22 +125,42 @@ footer,
     margin-bottom: 94px;
 }
 .section-title {
+    margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    margin-bottom: 10px;
 }
 .section .text {
     font-size: 14px;
     line-height: 1.71;
 }
+.advant-box {
+    display: flex;
+}
+
+.advant-box .item {
+    width: calc((100%-90px)/4);
+}
+
+.advant-box .item+.item {
+    margin-left: 30px;
+}
+
 .container .title {
     margin-bottom: 50px;
 }
 .text,
 header .contacts {
     color: var(--secondary-color);
+}
+
+.do-box {
+    display: flex;
+}
+.do-box .item + .item {
+    margin-left: 30px;
 }
 .team .container {
     padding-top: 94px;
@@ -140,14 +189,12 @@ header .contacts {
 .team-member {
     margin-bottom: 30px;
 }
-
-/* .team li,
-.work li,
-.filters li {
-    display: inline-block;
-} */
-
-
+.team-box {
+    display: flex;
+}
+.team-box .item + .item {
+    margin-left: 30px;
+}
 span,
 .current, 
 .site-nav:hover,
@@ -174,18 +221,34 @@ span,
     background-color: var(--secondary-background-color);
 }
 .filters {
+    display: flex;
     margin-bottom: 34px;
+    justify-content: center;
 }
-.work-exmpl {
-    margin: 20px 24px;
+.filters .item + .item {
+    margin-left: 8px;
 }
+
 .filter {
+    padding: 6px 22px;
+
     color: inherit;
     background-color: var(--secondary-background-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em
+}
+
+.filters button {
+    border-color: transparent;
+    border-radius: 4px;
+}
+.work-img {
+    margin-bottom: 20px;
+}
+h2.topic {
+    margin: 4px 24px;
 }
 .work .topic {
     color: var(--primary-color);
@@ -194,9 +257,24 @@ span,
     line-height: 2;
     letter-spacing: 0.06em;
 } 
-.work .text {
+.type-of-work {
+    margin-left: 24px;
+    margin-right: 24px;
+
     font-size: 16px;
     line-height: 1.88;
+}
+.work {
+    display: flex;
+    flex-wrap: wrap;
+}
+.work .item {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.work .item:nth-child(3n) {
+    margin-left: 0;
+    margin-bottom: 0;
 }
 .hero-button,
 .filter {
@@ -208,14 +286,10 @@ footer .contacts {
     font-size: 14px;
     line-height: 1.71;
 }
-.container {
-    width: 1200px;
-    padding-left: 15;
-    padding-right: 15;
-    margin-left: auto;
-    margin-right: auto;
-    
-  
-    outline: 1px solid green;
-   
+address {
+    margin-top: 20px;
+} 
+footer .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
