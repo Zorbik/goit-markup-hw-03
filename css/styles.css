@@ -286,6 +286,11 @@ h2.topic {
 .work .item:nth-child(n+7) {
     margin-bottom: 0;
 }
+button.filter:hover,
+.filter:focus {
+    padding-left: 25px;
+    padding-right: 25px;
+}
 .hero-button,
 .filter {
     cursor: pointer;
