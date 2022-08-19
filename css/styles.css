@@ -120,12 +120,12 @@ footer,
 }
 .container .section,
 .works {
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .section .container {
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 .section-title {
     margin-bottom: 10px;
