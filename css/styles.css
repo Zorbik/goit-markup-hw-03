@@ -15,7 +15,8 @@ h2,
 h3,
 p,
 ul,
-li {
+li,
+a {
     margin: 0;
     border-width:  0;
     padding: 0;
@@ -76,7 +77,6 @@ header .logo{
 .contact-box {
     display: flex;
     margin-left: auto;
-
 }
 
 .main-nav {
@@ -288,7 +288,7 @@ span,
     margin-bottom: 0;
 }
 
-button.filter:hover,
+.filter:hover,
 .filter:focus {
     padding-left: 25px;
     padding-right: 25px;
