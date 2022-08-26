@@ -93,10 +93,11 @@ footer,
     color: var(--primary-background-color);
     background-color: var(--logo-color);
 }
-.hero .container {
+.hero {
+    padding: 200px 0;
     text-align: center;
 }
-.hero .title {
+.hero-title {
     margin-bottom: 30px;
 
     color: var(--primary-background-color);
@@ -118,16 +119,16 @@ footer,
     line-height: 1.88;
     letter-spacing: 0.06em;
 }
-.container .section,
+.advantages,
 .works {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.section .container {
+.activities {
     padding-bottom: 94px;
 }
-.section-title {
+.advantage-item-title {
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -135,7 +136,7 @@ footer,
     line-height: 1.14;
     text-transform: uppercase;
 }
-.section .text {
+.advantages .text {
     font-size: 14px;
     line-height: 1.71;
 }
@@ -151,9 +152,6 @@ footer,
     margin-left: 30px;
 }
 
-.container .title {
-    margin-bottom: 50px;
-}
 .text,
 .type-of-work,
 header .contacts {
@@ -166,12 +164,13 @@ header .contacts {
 .do-box .item + .item {
     margin-left: 30px;
 }
-.team .container {
+.team {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.section .title,
-.team .title {
+.do-title,
+.team-title {
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -231,7 +230,7 @@ span,
 }
 .filters {
     display: flex;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     justify-content: center;
 }
 .filters .item + .item {
@@ -253,11 +252,10 @@ span,
     border-color: transparent;
     border-radius: 4px;
 }
-.work-img {
-    margin-bottom: 20px;
-}
-h2.topic {
-    margin: 4px 24px;
+.work-info {
+    padding: 20px 24px;
+    border: 1px solid #EEE;
+    border-top: 0;
 }
 
 .work .topic {
@@ -269,9 +267,6 @@ h2.topic {
 } 
 
 .type-of-work {
-    margin-left: 24px;
-    margin-right: 24px;
-
     font-size: 16px;
     line-height: 1.88;
 }
@@ -282,8 +277,6 @@ h2.topic {
 .work .item {
     margin-right: 30px;
     margin-bottom: 30px;
-    border-bottom: 1px solid #EEE;
-    padding-bottom: 20px;
 }
 .work .item:nth-child(3n) {
     margin-right: 0;
@@ -306,10 +299,16 @@ footer .contacts {
     font-size: 14px;
     line-height: 1.71;
 }
-address {
+.adds {
     margin-top: 20px;
+}
+.adds .item {
+    margin-bottom: 9px;
 } 
-footer .container {
+.adds .item:last-child {
+    margin-bottom: 0;
+}
+footer {
     padding-top: 60px;
     padding-bottom: 60px;
 }
